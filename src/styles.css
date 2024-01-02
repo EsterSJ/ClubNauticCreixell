@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/* fuentes */
+@font-face {
+    font-family: 'Island';
+    src: url(assets/fonts/IslandMoments-Regular.ttf);
+}
+
+/* variables */
+:root{
+    /* colores */
+    --colorVerde: #2CBCA4;
+    --colorAzul: #4364AB;
+    --colorBlanco: #FFFFFF;
+    --colorGris: #858B94;
+}
+
+/* limpiadores */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}

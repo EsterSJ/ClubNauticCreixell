@@ -1,0 +1,23 @@
+<div class="contenedor">
+
+    <header>
+
+        <span>
+            Club Nàutic Creixell 
+        </span>
+
+        <div class="idioma">
+            <button (click)="selectLanguage('es')">Español</button>
+            <button (click)="selectLanguage('en')">English</button>
+            <button (click)="selectLanguage('cat')">Català</button>
+        </div>
+        
+    </header>
+
+    <img src="assets/img/logo.png" alt="">
+
+    <h1>
+        {{ 'HOME.TITLE' | transloco }}
+    </h1>
+
+</div>
