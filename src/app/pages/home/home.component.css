@@ -53,3 +53,37 @@ button{
     color: var(--colorAzul);
     font-size: 22px;
 }
+
+/* Media queries para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    span {
+        font-size: 48px;
+        margin-right: 10px;
+    }
+
+    img {
+        width: 260px;
+        margin-top: -97px;
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: center;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        width: 80px;
+    }
+
+    .idioma{
+        gap: 6px;
+        margin-right: 0%;
+    }
+
+    header{
+        /* justify-content: center; */
+        align-items: center;
+    }
+}
