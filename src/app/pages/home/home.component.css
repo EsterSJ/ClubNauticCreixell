@@ -128,6 +128,10 @@ p{
         align-items: center;
     }
 
+    input{
+        width: 280px;
+    }
+    
     .line{
         width: 280px;
     }
