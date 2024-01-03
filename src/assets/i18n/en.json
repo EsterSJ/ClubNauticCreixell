@@ -1,10 +1,15 @@
 {
     "HOME": {
-        "TITLE": "Welcome to the Creixell Nautical Club. We are delighted to greet you again."
+        "TITLE": "Welcome to the Club, we are delighted to greet you again."
     },
     "LANGUAGE": {
         "ES": "Español",
         "EN": "English",
         "CAT": "Català"
+    },
+    "LOGIN":{
+        "USER": "User*",
+        "PASSWORD": "Password*",
+        "REMEMBER": "Did you forget your password? REMEMBER"
     }
 }

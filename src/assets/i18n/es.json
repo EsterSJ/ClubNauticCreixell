@@ -1,10 +1,15 @@
 {
     "HOME": {
-        "TITLE": "Bienvenido al Club Náutic Creixell. Estamos encantados de volver a saludarte"
+        "TITLE": "Bienvenido al Club, estamos encantados de volver a saludarte"
     },
     "LANGUAGE": {
         "ES": "Español",
         "EN": "English",
         "CAT": "Català"
+    },
+    "LOGIN":{
+        "USER": "Usuario*",
+        "PASSWORD": "Contraseña*",
+        "REMEMBER": "¿Olvidaste tu contraseña? RECORDAR"
     }
 }

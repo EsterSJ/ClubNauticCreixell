@@ -20,4 +20,15 @@
         {{ 'HOME.TITLE' | transloco }}
     </h1>
 
+    <form action="reset">
+        
+        <i class="bi bi-person-fill"><input type="text" placeholder="{{ 'LOGIN.USER' | transloco }}"></i>
+        <div class="line"></div>
+        <i class="bi bi-lock-fill"><input type="password" placeholder="{{ 'LOGIN.PASSWORD' | transloco }}"></i>
+        <div class="line"></div>
+        <button>ENTRAR</button>
+        <p>{{ 'LOGIN.REMEMBER' | transloco }}</p>
+
+    </form>
+
 </div>
