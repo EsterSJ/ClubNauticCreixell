@@ -48,16 +48,6 @@ h1{
     font-size: 74px;
 }
 
-button{
-    font-size: 28px;
-    width: 120px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    color: var(--colorAzul);
-    font-size: 22px;
-}
-
 form{
     display: flex;
     flex-direction: column;
@@ -97,7 +87,6 @@ button{
     color: white;
     background-color: var(--colorAzul);
     border-radius: 50%;
-    /* font-weight: bold; */
     border: none;
     width: 180px;
     height: 40px;
@@ -108,7 +97,6 @@ p{
     margin-top: -24px;
 }
 
-/* Media queries para pantallas más pequeñas */
 @media only screen and (max-width: 768px) {
     span {
         font-size: 48px;
@@ -137,7 +125,6 @@ p{
     }
 
     header{
-        /* justify-content: center; */
         align-items: center;
     }
 
