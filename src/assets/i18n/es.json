@@ -10,6 +10,7 @@
     "LOGIN":{
         "USER": "Usuario*",
         "PASSWORD": "Contraseña*",
+        "LOGIN": "ENTRAR",
         "REMEMBER": "¿Olvidaste tu contraseña? RECORDAR"
     }
 }

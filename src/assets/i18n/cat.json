@@ -10,6 +10,7 @@
     "LOGIN":{
         "USER": "Usuari*",
         "PASSWORD": "Contrasenya*",
+        "LOGIN": "ENTRAR",
         "REMEMBER": "¿Has oblidat la teva contrasenya? RECORDA"
     }
 }

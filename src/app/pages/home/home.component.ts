@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslocoService } from '@ngneat/transloco';
+import { TranslateService } from 'src/app/shared/translate.service';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +8,12 @@ import { TranslocoService } from '@ngneat/transloco';
 })
 export class HomeComponent {
   title = 'angular-i18n-transloco';
-  selectLang = 'es';
-  constructor(private translocoService: TranslocoService) {
+
+  constructor(private translationService: TranslateService) {
     this.selectLanguage();
   }
 
-  selectLanguage(language: string = this.selectLang) {
-    this.translocoService.setActiveLang( language );
+  selectLanguage(language: string = 'es') {
+    this.translationService.setLanguage(language);
   }
 }
