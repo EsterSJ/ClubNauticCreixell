@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService } from 'src/app/shared/translate.service';
 
 @Component({
@@ -9,11 +10,17 @@ import { TranslateService } from 'src/app/shared/translate.service';
 export class HomeComponent {
   title = 'angular-i18n-transloco';
 
-  constructor(private translationService: TranslateService) {
+  constructor(private translationService: TranslateService, public router: Router) {
     this.selectLanguage();
   }
 
   selectLanguage(language: string = 'es') {
     this.translationService.setLanguage(language);
   }
+
+  public reservas (){
+    this.router.navigateByUrl('/reservas');
+  }
 }
+
+

@@ -1,20 +1,11 @@
-/*PARA BORRAR*/
-.header{
-    width: 100vw;
-    height: 15vh;
+.contenedor{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-size: 40px;
+    gap: 80px;
 }
 
-img{
-    width: 180px;
-    height: auto;
-    padding: 12px;
-}
-/*HASTA AQUI*/
 span{
     color: var(--colorBlanco);
     font-size: 108px;
@@ -61,6 +52,10 @@ span{
 }
 
 @media only screen and (max-width: 768px) {
+    .contenedor{
+        gap: 20px;
+    }
+    
     .menu{
         display: flex;
         flex-direction: column;
@@ -73,6 +68,10 @@ span{
         width: 240px;
         height: 240px;
         font-size: 14px;
+    }
+
+    span{
+        font-size: 92px;
     }
 
     .header{

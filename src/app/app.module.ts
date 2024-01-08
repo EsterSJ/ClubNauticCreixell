@@ -7,12 +7,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import { ReservasComponent } from './pages/reservas/reservas.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ReservasComponent
+    ReservasComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
