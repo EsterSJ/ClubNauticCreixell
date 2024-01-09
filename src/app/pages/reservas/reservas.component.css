@@ -50,11 +50,11 @@ img{
 
 .info{
     font-size: 18px;
-    /* padding: 20px; */
     color: var(--colorAzul);
     margin-bottom: 24px;
     text-align: left;
     width: 360px;
+    padding-top: 20px;
 }
 
 button{
