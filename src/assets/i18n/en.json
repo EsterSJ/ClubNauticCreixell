@@ -2,15 +2,23 @@
     "HOME": {
         "TITLE": "Welcome to the Club, we are delighted to greet you again."
     },
+
     "LANGUAGE": {
         "ES": "Español",
         "EN": "English",
         "CAT": "Català"
     },
+
     "LOGIN":{
         "USER": "User*",
         "PASSWORD": "Password*",
         "LOGIN": "SING IN",
         "REMEMBER": "Did you forget your password? REMEMBER"
+    },
+
+    "RESERVAS":{
+        "VELEROS": "SAILBOATS",
+        "SOCIAL": "SOCIAL",
+        "TRAVESIAS": "VOYAGES"
     }
 }

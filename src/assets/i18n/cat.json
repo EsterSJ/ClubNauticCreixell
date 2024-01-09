@@ -2,15 +2,23 @@
     "HOME": {
         "TITLE": "Benvingut al Club, estem encantats de saludar-te de nou."
     },
+
     "LANGUAGE": {
         "ES": "Spanish",
         "EN": "English",
         "EU": "Basque"
     },
+
     "LOGIN":{
         "USER": "Usuari*",
         "PASSWORD": "Contrasenya*",
         "LOGIN": "ENTRAR",
         "REMEMBER": "¿Has oblidat la teva contrasenya? RECORDA"
+    },
+
+    "RESERVAS":{
+        "VELEROS": "VAIXELLS",
+        "SOCIAL": "SOCIAL",
+        "TRAVESIAS": "TRAVESSIES"
     }
 }
