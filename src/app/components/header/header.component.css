@@ -24,6 +24,10 @@ img{
     font-size: 20px;
 }
 
+a{
+    color: var(--colorAzul);
+}
+
 a:hover{
     color: var(--colorVerde);
 }

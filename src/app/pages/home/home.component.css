@@ -4,13 +4,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
     background-color: var(--colorBlanco);
     width: 100vw;
 }
 
 header{
-    height: 38vh;
+    height: 34vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
