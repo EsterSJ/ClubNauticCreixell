@@ -1,3 +1,5 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
 .header{
     width: 100vw;
     height: 15vh;
@@ -34,10 +36,14 @@ a:hover{
     }
 
     .navegacion{
-        display: flex;
-        flex-direction: column;
         font-size: 14px;
-        gap: 2px;
+        gap: 14px;
+        margin-right: 22px;
+    }
+
+    img{
+        width: 120px;
+        height: auto;
     }
 
 }

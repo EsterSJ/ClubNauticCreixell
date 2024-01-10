@@ -1,4 +1,10 @@
 {
+    "HEADER":{
+        "INICIO": "home",
+        "RESERVAS": "reservations",
+        "SALIR": "sing out"
+    },
+
     "HOME": {
         "TITLE": "Welcome to the Club, we are delighted to greet you again."
     },
@@ -20,5 +26,10 @@
         "VELEROS": "SAILBOATS",
         "SOCIAL": "SOCIAL",
         "TRAVESIAS": "VOYAGES"
+    },
+
+    "MIS_RESERVAS":{
+        "VER": "Check my",
+        "RESERVAS": "RESERVATIONS"
     }
 }

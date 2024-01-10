@@ -17,6 +17,9 @@ p{
     background-color: transparent;
     width: auto;
 }
+    .aqui:hover{
+        background-color: transparent;
+    }
 
 .menu{
     display: flex;
@@ -74,7 +77,10 @@ button{
 
 @media only screen and (max-width: 768px) {
     .contenedor{
-        gap: 20px;
+        height: auto;
+        gap: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
     .menu{
@@ -82,7 +88,7 @@ button{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 24px;
+        gap: 32px;
     }
 
     .opcion{
@@ -91,10 +97,6 @@ button{
         font-size: 14px;
         padding-top: 12px;
         padding-bottom: 12px;
-    }
-
-    .header{
-        height: 8vh;
     }
 
     img{

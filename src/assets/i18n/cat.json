@@ -1,4 +1,10 @@
 {
+    "HEADER":{
+        "INICIO": "inici",
+        "RESERVAS": "reserves",
+        "SALIR": "sortir"
+    },
+    
     "HOME": {
         "TITLE": "Benvingut al Club, estem encantats de saludar-te de nou."
     },
@@ -20,5 +26,10 @@
         "VELEROS": "VAIXELLS",
         "SOCIAL": "SOCIAL",
         "TRAVESIAS": "TRAVESSIES"
+    },
+
+    "MIS_RESERVAS":{
+        "VER": "Consultar les meves",
+        "RESERVAS": "RESERVES"
     }
 }
