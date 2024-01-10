@@ -4,7 +4,7 @@
         "RESERVAS": "reservas",
         "SALIR": "salir"
     },
-    
+
     "HOME": {
         "TITLE": "Bienvenido al Club, estamos encantados de volver a saludarte"
     },
@@ -19,7 +19,8 @@
         "USER": "Usuario*",
         "PASSWORD": "Contraseña*",
         "LOGIN": "ENTRAR",
-        "REMEMBER": "¿Olvidaste tu contraseña? RECORDAR"
+        "REMEMBER": "¿Olvidaste tu contraseña?",
+        "AQUI": "RECORDAR"
     },
 
     "RESERVAS":{

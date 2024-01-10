@@ -10,7 +10,7 @@
 }
 
 header{
-    height: 32vh;
+    height: 38vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ header{
     background-size: cover;
     padding: 24px;
 }
-
+    
 span{
     color: var(--colorBlanco);
     font-size: 108px;
@@ -41,20 +41,13 @@ img{
     margin-top: -142px;
 }
 
-h1{
-    color: var(--colorAzul);
-    font-size: 28px;
-    font-family: 'Island';
-    font-size: 74px;
-}
-
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 input{
@@ -92,6 +85,19 @@ button{
     height: 40px;
     cursor: pointer;
 }
+    button:hover{
+        background-color: var(--colorVerde);
+    }
+
+.aqui{
+    color: var(--colorVerde);
+    background-color: transparent;
+    width: auto;
+    font-size: 18px;
+}
+    .aqui:hover{
+        background-color: transparent;
+    }
 
 p{
     color: var(--colorGris);

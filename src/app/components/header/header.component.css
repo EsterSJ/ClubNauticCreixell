@@ -28,6 +28,10 @@ a:hover{
     color: var(--colorVerde);
 }
 
+i:hover{
+    color: var(--colorVerde);
+}
+
 @media only screen and (max-width: 768px) {
 
     .header{

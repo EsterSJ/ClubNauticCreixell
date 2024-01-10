@@ -19,7 +19,8 @@
         "USER": "User*",
         "PASSWORD": "Password*",
         "LOGIN": "SING IN",
-        "REMEMBER": "Did you forget your password? REMEMBER"
+        "REMEMBER": "Did you forget your password?",
+        "AQUI": "REMEMBER"
     },
 
     "RESERVAS":{
