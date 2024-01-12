@@ -8,13 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import { ReservasComponent } from './pages/reservas/reservas.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SocialComponent } from './pages/social/social.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ReservasComponent,
-    HeaderComponent
+    HeaderComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,

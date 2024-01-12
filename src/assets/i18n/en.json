@@ -32,5 +32,30 @@
     "MIS_RESERVAS":{
         "VER": "Check my",
         "RESERVAS": "RESERVATIONS"
+    },
+
+    "MESES":{
+        "ENERO": "January",
+        "FEBRERO": "February",
+        "MARZO": "March",
+        "ABRIL": "April",
+        "MAYO": "May",
+        "JUNIO": "June",
+        "JULIO": "July",
+        "AGOSTO": "August",
+        "SEPTIEMBRE": "September",
+        "OCTUBRE": "October",
+        "NOVIEMBRE": "November",
+        "DICIEMBRE": "December"
+    },
+
+    "SEMANA":{
+        "LUNES": "Mon",
+        "MARTES": "Tue",
+        "MIERCOLES": "Wen",
+        "JUEVES": "Thu",
+        "VIERNES": "Fri",
+        "SABADO": "Sat",
+        "DOMINGO": "Sun"
     }
 }

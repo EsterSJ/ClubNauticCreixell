@@ -32,5 +32,30 @@
     "MIS_RESERVAS":{
         "VER": "Consultar mis",
         "RESERVAS": "RESERVAS"
+    },
+
+    "MESES":{
+        "ENERO": "Enero",
+        "FEBRERO": "Febrero",
+        "MARZO": "Marzo",
+        "ABRIL": "Abril",
+        "MAYO": "Mayo",
+        "JUNIO": "Junio",
+        "JULIO": "Julio",
+        "AGOSTO": "Agosto",
+        "SEPTIEMBRE": "Septiembre",
+        "OCTUBRE": "Octubre",
+        "NOVIEMBRE": "Noviembre",
+        "DICIEMBRE": "Diciembre"
+    },
+
+    "SEMANA":{
+        "LUNES": "Lun",
+        "MARTES": "Mar",
+        "MIERCOLES": "Mie",
+        "JUEVES": "Jue",
+        "VIERNES": "Vie",
+        "SABADO": "Sab",
+        "DOMINGO": "Dom"
     }
 }

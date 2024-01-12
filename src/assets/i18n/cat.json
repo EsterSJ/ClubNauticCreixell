@@ -32,5 +32,30 @@
     "MIS_RESERVAS":{
         "VER": "Consultar les meves",
         "RESERVAS": "RESERVES"
+    },
+
+    "MESES":{
+        "ENERO": "Gener",
+        "FEBRERO": "Febrer",
+        "MARZO": "Març",
+        "ABRIL": "Abril",
+        "MAYO": "Maig",
+        "JUNIO": "Juny",
+        "JULIO": "Juliol",
+        "AGOSTO": "Agost",
+        "SEPTIEMBRE": "Septembre",
+        "OCTUBRE": "Octubre",
+        "NOVIEMBRE": "Novembre",
+        "DICIEMBRE": "Desembre"
+    },
+
+    "SEMANA":{
+        "LUNES": "Dil",
+        "MARTES": "Dim",
+        "MIERCOLES": "Dime",
+        "JUEVES": "Dij",
+        "VIERNES": "Div",
+        "SABADO": "Dis",
+        "DOMINGO": "Diu"
     }
 }
