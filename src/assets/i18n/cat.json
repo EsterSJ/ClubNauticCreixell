@@ -10,9 +10,9 @@
     },
 
     "LANGUAGE": {
-        "ES": "Spanish",
+        "ES": "Español",
         "EN": "English",
-        "EU": "Basque"
+        "CAT": "Català"
     },
 
     "LOGIN":{
@@ -57,5 +57,7 @@
         "VIERNES": "Div",
         "SABADO": "Dis",
         "DOMINGO": "Diu"
-    }
+    },
+
+    "RESERVAR": "RESERVAR"
 }

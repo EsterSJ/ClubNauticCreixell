@@ -9,9 +9,21 @@ import { TranslocoService } from '@ngneat/transloco';
 
 export class SocialComponent implements OnInit{
 
-  // private nombreMeses: string[] = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"];
-  private nombreMeses: string[];
-  
+  private nombreMeses: string[] = [
+    this.translocoService.translate('MESES.ENERO'),
+    this.translocoService.translate('MESES.FEBRERO'),
+    this.translocoService.translate('MESES.MARZO'),
+    this.translocoService.translate('MESES.ABRIL'),
+    this.translocoService.translate('MESES.MAYO'),
+    this.translocoService.translate('MESES.JUNIO'),
+    this.translocoService.translate('MESES.JULIO'),
+    this.translocoService.translate('MESES.AGOSTO'),
+    this.translocoService.translate('MESES.SEPTIEMBRE'),
+    this.translocoService.translate('MESES.OCTUBRE'),
+    this.translocoService.translate('MESES.NOVIEMBRE'),
+    this.translocoService.translate('MESES.DICIEMBRE')
+  ];  
+
   public fechaActual: Date;
   public diaActual: number;
   public mesActual: number;
@@ -47,29 +59,20 @@ export class SocialComponent implements OnInit{
   }
 
   constructor(private translocoService: TranslocoService) {
-    this.nombreMeses = [
-      this.translocoService.translate('MESES.ENERO'),
-      this.translocoService.translate('MESES.FEBRERO'),
-      this.translocoService.translate('MESES.MARZO'),
-      this.translocoService.translate('MESES.ABRIL'),
-      this.translocoService.translate('MESES.MAYO'),
-      this.translocoService.translate('MESES.JUNIO'),
-      this.translocoService.translate('MESES.JULIO'),
-      this.translocoService.translate('MESES.AGOSTO'),
-      this.translocoService.translate('MESES.SEPTIEMBRE'),
-      this.translocoService.translate('MESES.OCTUBRE'),
-      this.translocoService.translate('MESES.NOVIEMBRE'),
-      this.translocoService.translate('MESES.DICIEMBRE')
-    ];
+
   }
 
   public mostrarMeses (mes: number):void {
+    // for(let i = this.diaSemanaComienzo(); i>0; i--){
+    //   this.fechas.innerHTML += ` <div class="day item" style="opacity: .2; text-decoration: line-through">${this.diasDelMes(this.mesActual-1)-(i-1)} `
+    // }
+
     for(let i = this.diaSemanaComienzo(); i>0; i--){
-      this.fechas.innerHTML += ` <div class="day item" style="opacity: .2; text-decoration: line-through">${this.diasDelMes(this.mesActual-1)-(i-1)} `
+      this.fechas.innerHTML += ` <div class="day item"> `
     }
 
     for(let day=1; day<=this.diasDelMes(mes); day++){
-      this.fechas.innerHTML += ` <div class="day item" style="padding: 4px; border-radius: 4px; border: 1px solid var(--colorGris)">${day} `
+      this.fechas.innerHTML += ` <button class="day item" style="padding: 4px; border-radius: 4px; border: 1px solid var(--colorGris); cursor: pointer;">${day} `
     }
   }
 

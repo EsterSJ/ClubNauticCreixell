@@ -57,5 +57,7 @@
         "VIERNES": "Vie",
         "SABADO": "Sab",
         "DOMINGO": "Dom"
-    }
+    },
+
+    "RESERVAR": "RESERVAR"
 }

@@ -5,6 +5,14 @@
   align-items: center;
   width: 100vw;
   height: 85vh;
+  gap: 10px;
+}
+
+span{
+  color: var(--colorBlanco);
+  font-size: 92px;
+  text-shadow: 4px 4px 4px black;
+  font-family: 'Island';
 }
 
 .calendario{
@@ -14,14 +22,14 @@
   width: 70%;
   max-width: 700px;
   margin: 1em auto;
-  height: 70%;
+  height: 65%;
 }
 
 .info{
   display: flex;
   align-items: center;
   padding: .5em 2em;
-  font-size: 2em;
+  font-size: 1.5em;
   text-transform: uppercase;
   color: white;
   background-color: var(--colorAzul);
@@ -57,7 +65,7 @@
 
 .semana{
   background: linear-gradient(to bottom, #858B94, #ffffff);
-  padding: .8em 0;
+  padding: .7em 0;
 }
 
 .fechas{
@@ -74,6 +82,21 @@
   line-height: 2;
   font-size: 24px;
 }
+
+button{
+  color: white;
+  background-color: var(--colorAzul);
+  border-radius: 50%;
+  border: none;
+  width: 180px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+  button:hover{
+      background-color: var(--colorVerde);
+  }
 
 @media screen and (max-width: 768px) {
   .calendario {

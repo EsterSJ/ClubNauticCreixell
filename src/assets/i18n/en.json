@@ -57,5 +57,7 @@
         "VIERNES": "Fri",
         "SABADO": "Sat",
         "DOMINGO": "Sun"
-    }
+    },
+
+    "RESERVAR": "RESERVAR"
 }
