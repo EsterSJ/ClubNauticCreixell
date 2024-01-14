@@ -120,4 +120,13 @@ button{
     font-size: 10px;
   }
 
+  span{
+    font-size: 78px;
+  }
+
+  button{
+    font-size: 14px;
+    width: 110px;
+}
+
 }
