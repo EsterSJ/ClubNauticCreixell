@@ -21,15 +21,14 @@ span{
   box-shadow: 4px 4px 8px var(--colorGris);
   width: 70%;
   max-width: 700px;
-  margin: 1em auto;
-  height: 65%;
+  height: auto;
 }
 
 .info{
   display: flex;
   align-items: center;
   padding: .5em 2em;
-  font-size: 1.5em;
+  font-size: 2em;
   text-transform: uppercase;
   color: white;
   background-color: var(--colorAzul);
