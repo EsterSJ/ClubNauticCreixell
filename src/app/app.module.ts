@@ -9,6 +9,7 @@ import { TranslocoRootModule } from './transloco-root.module';
 import { ReservasComponent } from './pages/reservas/reservas.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SocialComponent } from './pages/social/social.component';
+import { VelerosComponent } from './pages/veleros/veleros.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SocialComponent } from './pages/social/social.component';
     HomeComponent,
     ReservasComponent,
     HeaderComponent,
-    SocialComponent
+    SocialComponent,
+    VelerosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div class="contenedor">
+    <div class="info">
+      <span class="info__anterior" (click)="anterior()">&#9664;</span>
+      <span class="info__mes">{{ nombreMeses[fechaActual.getMonth()] }}</span>
+      <span class="info__anyo">{{ fechaActual.getFullYear() }}</span>
+      <span class="info__siguiente" (click)="siguiente()">&#9654;</span>
+    </div>
+  
+    <div class="semana nombreDias">
+      <ng-container *ngFor="let dia of ['D', 'L', 'M', 'X', 'J', 'V', 'S']">
+        <span class="item">{{ dia }}</span>
+      </ng-container>
+    </div>
+  
+    <div class="fechas">
+      <ng-container *ngFor="let semana of diasDelMes">
+        <div class="semana">
+          <ng-container *ngFor="let dia of semana">
+            <button
+              class="day item"
+              style="padding: 4px; border-radius: 4px; border: 1px solid var(--colorGris); cursor: pointer;"
+              [ngClass]="{'clicked': diasSeleccionados.has(dia)}"
+              (click)="cambiarColor(dia)"
+            >
+            <span>{{ dia || '' }}</span>
+            </button>
+          </ng-container>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  
+  

@@ -12,7 +12,11 @@ export class ReservasComponent {
 
   }
 
-  public social (){
+  public veleros():void {
+    this.router.navigateByUrl('/veleros');
+  }
+
+  public social(): void{
     this.router.navigateByUrl('/social');
   }
 
