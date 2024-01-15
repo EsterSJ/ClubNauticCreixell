@@ -11,16 +11,17 @@
 
 .menu {
   border-bottom: 1px solid var(--colorGris);
-  width: 900px;
+  width: 90%; 
+  margin: 0 auto; 
   display: flex;
   flex-direction: row;
-  position: relative; 
+  position: relative;
 }
 
 .boton_menu {
-  font-size: 22px;
+  font-size: 18px;
   background-color: transparent;
-  width: 40vw;
+  width: 90%; 
   border-radius: 0%;
   border: none;
   cursor: pointer;
@@ -32,15 +33,14 @@
 .linea_verde {
   margin-bottom: -3px;
   height: 5px;
-  width: 300px;
+  width: 33.3%; 
   background-color: var(--colorVerde);
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: transform 0.3s ease; /* Agregamos una transición para un efecto suave */
+  transition: transform 0.3s ease;
 }
 
-/* Estilos para el botón seleccionado */
 .boton_menu.seleccionado {
   font-weight: bold; 
   color: var(--colorVerde);
@@ -60,6 +60,8 @@
     border: 3px solid var(--colorAzul);
     border-radius: 4px;
     width: fit-content;
+    height: 60vh;
+    padding: 40px;
     box-shadow: 4px 4px 8px var(--colorGris);
   }
   
@@ -75,6 +77,11 @@
   .info__siguiente {
     cursor: pointer;
     margin: 0 10px;
+  }
+
+  .info__mes{
+    width: 180px;
+    text-align: center;
   }
 
   .item{
@@ -130,43 +137,16 @@
   }
   
   @media screen and (max-width: 768px) {
-
-    .menu {
-      border-bottom: 1px solid var(--colorGris);
-      width: 90%; 
-      max-width: 900px; 
-      margin: 0 auto; 
-      display: flex;
-      flex-direction: row;
-      position: relative;
-    }
-
-    .boton_menu {
-      font-size: 18px;
-      background-color: transparent;
-      width: 90%; 
-      max-width: 40vw; 
-      border-radius: 0%;
-      border: none;
-      cursor: pointer;
-      position: relative;
-      color: var(--colorGris);
-      padding: 2px;
-    }
-
-    .linea_verde {
-      margin-bottom: -3px;
-      height: 5px;
-      width: 33.3%; 
-      background-color: var(--colorVerde);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transition: transform 0.3s ease;
-    }    
     
     .calendario{
-        width: 90vw;
+        width: 80vw;
+        height: 40vh;
+        padding: 6%;
+    }
+
+    .info__mes{
+      width: 120px;
+      font-size: 18px;
     }
 
     .day {

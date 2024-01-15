@@ -59,5 +59,11 @@
         "DOMINGO": "Sun"
     },
 
-    "RESERVAR": "RESERVAR"
+    "RESERVAR": "RESERVAR",
+
+    "VELEROS":{
+        "VELERO1": "Sailboat1",
+        "VELERO2": "Sailboat2",
+        "VELERO3": "Sailboat3"
+    }
 }

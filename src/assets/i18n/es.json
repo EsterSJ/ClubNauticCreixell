@@ -59,5 +59,11 @@
         "DOMINGO": "Dom"
     },
 
-    "RESERVAR": "RESERVAR"
+    "RESERVAR": "RESERVAR",
+
+    "VELEROS":{
+        "VELERO1": "Velero1",
+        "VELERO2": "Velero2",
+        "VELERO3": "Velero3"
+    }
 }

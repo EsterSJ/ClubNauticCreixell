@@ -59,5 +59,11 @@
         "DOMINGO": "Diu"
     },
 
-    "RESERVAR": "RESERVAR"
+    "RESERVAR": "RESERVAR",
+
+    "VELEROS":{
+        "VELERO1": "Vaixell1",
+        "VELERO2": "Vaixell2",
+        "VELERO3": "Vaixell3"
+    }
 }

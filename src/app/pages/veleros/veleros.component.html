@@ -3,25 +3,24 @@
 <div class="contenedor">
   
   <div class="menu">
-    <button type="button" class="boton_menu" [class.seleccionado]="botonSeleccionado === 0" (click)="seleccionarBoton(0)">Velero 1</button>
-    <button type="button" class="boton_menu" [class.seleccionado]="botonSeleccionado === 1" (click)="seleccionarBoton(1)">Velero 2</button>
-    <button type="button" class="boton_menu" [class.seleccionado]="botonSeleccionado === 2" (click)="seleccionarBoton(2)">Velero 3</button>
-    <!-- <div class="linea_verde" [style.transform]="'translateX(' + (300 * botonSeleccionado) + 'px)'"></div> -->
+    <button type="button" class="boton_menu" [class.seleccionado]="botonSeleccionado === 0" (click)="seleccionarBoton(0)">{{"VELEROS.VELERO1" | transloco}}</button>
+    <button type="button" class="boton_menu" [class.seleccionado]="botonSeleccionado === 1" (click)="seleccionarBoton(1)">{{"VELEROS.VELERO2" | transloco}}</button>
+    <button type="button" class="boton_menu" [class.seleccionado]="botonSeleccionado === 2" (click)="seleccionarBoton(2)">{{"VELEROS.VELERO3" | transloco}}</button>
     <div class="linea_verde" [style.transform]="'translateX(' + (30 * botonSeleccionado) + 'vw)'"></div>
   </div>
 
   <div class="calendario">
       <div class="info">
         <span class="info__anterior" (click)="anterior()">&#9664;</span>
-        <span class="info__mes">{{ nombreMeses[fechaActual.getMonth()] }}</span>
+        <span class="info__mes">{{ translocoService.translate('MESES.' + nombreMeses[fechaActual.getMonth()]) }}</span>
         <span class="info__anyo">{{ fechaActual.getFullYear() }}</span>
         <span class="info__siguiente" (click)="siguiente()">&#9654;</span>
       </div>
     
       <div class="semana nombreDias">
-        <ng-container *ngFor="let dia of ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab']">
-          <span class="item">{{ dia }}</span>
-        </ng-container>
+        <ng-container *ngFor="let dia of diasSemana">
+          <span class="item">{{ translocoService.translate('SEMANA.' + dia) }}</span>
+        </ng-container>        
       </div>
     
       <div class="fechas">

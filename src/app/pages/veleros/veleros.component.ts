@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-veleros',
@@ -10,8 +11,10 @@ export class VelerosComponent implements OnInit {
 
   public botonSeleccionado: number;
 
+  public diasSemana: string[] = ['LUNES', 'MARTES', 'MIERCOLES', 'JUEVES', 'VIERNES', 'SABADO', 'DOMINGO'];
+
   public nombreMeses: string[] = [
-    'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+    'ENERO', 'FEBRERO', 'MARZO', 'ABRIL', 'MAYO', 'JUNIO', 'JULIO', 'AGOSTO', 'SEPTIEMBRE', 'OCTUBRE', 'NOVIEMBRE', 'DICIEMBRE'
   ];
 
   public fechaActual: Date;
@@ -26,7 +29,7 @@ export class VelerosComponent implements OnInit {
     this.actualizarFecha();
   }
 
-  constructor (private router: Router){
+  constructor (private router: Router, public translocoService: TranslocoService){
     this.botonSeleccionado = 0;
   }
 
