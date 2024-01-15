@@ -10,6 +10,7 @@ import { ReservasComponent } from './pages/reservas/reservas.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SocialComponent } from './pages/social/social.component';
 import { VelerosComponent } from './pages/veleros/veleros.component';
+import { TravesiasComponent } from './pages/travesias/travesias.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { VelerosComponent } from './pages/veleros/veleros.component';
     ReservasComponent,
     HeaderComponent,
     SocialComponent,
-    VelerosComponent
+    VelerosComponent,
+    TravesiasComponent
   ],
   imports: [
     BrowserModule,
