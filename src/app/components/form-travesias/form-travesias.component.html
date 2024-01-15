@@ -1,0 +1,37 @@
+<form class="formulario" [formGroup]="travesiasForm">
+    <div class="entrada">
+        <label for="origen">Origen</label>
+        <input type="text" formControlName="origen">
+    </div>
+
+    <div class="entrada">
+        <label for="hora_salida">Hora salida</label>
+        <input type="time" formControlName="hora_salida">
+    </div>
+
+    <div class="entrada">
+        <label for="destino">Destino</label>
+        <input type="text" formControlName="destino">
+    </div>
+
+    <div class="entrada">
+        <label for="hora_llegada">Hora llegada</label>
+        <input type="time" formControlName="hora_llegada">
+    </div>
+
+    <div class="entrada">
+        <label for="fecha">Fecha</label>
+        <input type="date" formControlName="fecha">
+    </div>
+
+    <div class="entrada">
+        <label for="velero">Velero</label>
+        <input type="text" formControlName="velero">
+    </div>
+
+    <div class="entrada">
+        <label for="plazas">Nº Plazas</label>
+        <input type="number" formControlName="plazas">
+    </div>
+    <button type="reset" (click)="publicar_travesia();" [disabled]="travesiasForm.invalid">PUBLICAR</button>
+</form>

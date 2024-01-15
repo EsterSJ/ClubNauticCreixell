@@ -8,23 +8,11 @@
     </div>
 
     <ng-template [ngIf]= "botonSeleccionado === 0">
-        <div class="calendario">
-            Mostrar calendario
-        </div>
+        <app-calendario></app-calendario>
     </ng-template>
 
     <ng-template [ngIf]= "botonSeleccionado === 1">
-        <form class="formulario" (ngSubmit)="onSubmit()" [formGroup]="travesiasForm">
-            <input type="text" formControlName="origen" placeholder="Origen">
-            <input type="text" formControlName="destino" placeholder="Destino">
-            <label for="salida">Salida</label>
-            <input type="time" formControlName="salida">
-            <label for="llegada">Llegada</label>
-            <input type="time" formControlName="llegada">
-            <label for="date">Fecha</label>
-            <input type="date" formControlName="fecha">
-            <button [disabled]="travesiasForm.invalid">PUBLICAR</button>
-        </form>
+        <app-form-travesias></app-form-travesias>
     </ng-template>
 
 </div>

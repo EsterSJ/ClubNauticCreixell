@@ -13,6 +13,7 @@ import { SocialComponent } from './pages/social/social.component';
 import { VelerosComponent } from './pages/veleros/veleros.component';
 import { TravesiasComponent } from './pages/travesias/travesias.component';
 import { CalendarioComponent } from './components/calendario/calendario.component';
+import { FormTravesiasComponent } from './components/form-travesias/form-travesias.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,15 @@ import { CalendarioComponent } from './components/calendario/calendario.componen
     SocialComponent,
     VelerosComponent,
     TravesiasComponent,
-    CalendarioComponent
+    CalendarioComponent,
+    FormTravesiasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    TranslocoRootModule
+    TranslocoRootModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
