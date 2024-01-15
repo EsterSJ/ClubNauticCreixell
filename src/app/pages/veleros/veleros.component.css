@@ -1,4 +1,57 @@
-.contenedor {
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  gap: 40px;
+}
+
+.menu {
+  border-bottom: 1px solid var(--colorGris);
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  position: relative; 
+}
+
+.boton_menu {
+  font-size: 22px;
+  background-color: transparent;
+  width: 40vw;
+  border-radius: 0%;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  color: var(--colorGris);
+  padding: 2px;
+}
+
+.linea_verde {
+  margin-bottom: -3px;
+  height: 5px;
+  width: 300px;
+  background-color: var(--colorVerde);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.3s ease; /* Agregamos una transición para un efecto suave */
+}
+
+/* Estilos para el botón seleccionado */
+.boton_menu.seleccionado {
+  font-weight: bold; 
+  color: var(--colorVerde);
+}
+
+
+.boton_menu:hover{
+  background-color: transparent;
+}
+
+.calendario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,9 +130,45 @@
   }
   
   @media screen and (max-width: 768px) {
-    .contenedor{
+
+    .menu {
+      border-bottom: 1px solid var(--colorGris);
+      width: 90%; 
+      max-width: 900px; 
+      margin: 0 auto; 
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+
+    .boton_menu {
+      font-size: 18px;
+      background-color: transparent;
+      width: 90%; 
+      max-width: 40vw; 
+      border-radius: 0%;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      color: var(--colorGris);
+      padding: 2px;
+    }
+
+    .linea_verde {
+      margin-bottom: -3px;
+      height: 5px;
+      width: 33.3%; 
+      background-color: var(--colorVerde);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: transform 0.3s ease;
+    }    
+    
+    .calendario{
         width: 90vw;
     }
+
     .day {
       width: 32px;
       height: 32px;

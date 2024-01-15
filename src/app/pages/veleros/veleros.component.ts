@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-veleros',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./veleros.component.css']
 })
 export class VelerosComponent implements OnInit {
+
+  public botonSeleccionado: number;
 
   public nombreMeses: string[] = [
     'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
@@ -23,6 +26,14 @@ export class VelerosComponent implements OnInit {
     this.actualizarFecha();
   }
 
+  constructor (private router: Router){
+    this.botonSeleccionado = 0;
+  }
+
+  public seleccionarBoton (indice: number){
+    this.botonSeleccionado = indice;
+  }
+  
   private actualizarFecha(): void {
     const primerDia = new Date(this.fechaActual.getFullYear(), this.fechaActual.getMonth(), 1);
     const ultimoDia = new Date(this.fechaActual.getFullYear(), this.fechaActual.getMonth() + 1, 0);
