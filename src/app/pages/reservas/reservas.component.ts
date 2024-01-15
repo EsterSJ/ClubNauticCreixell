@@ -20,4 +20,8 @@ export class ReservasComponent {
     this.router.navigateByUrl('/social');
   }
 
+  public travesias(): void{
+    this.router.navigateByUrl('/travesias');
+  }
+
 }

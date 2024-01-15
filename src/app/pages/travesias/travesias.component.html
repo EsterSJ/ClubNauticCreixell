@@ -1,1 +1,30 @@
-<p>travesias works!</p>
+<app-header></app-header>
+
+<div class="contenedor">
+    <div class="menu">
+        <button type="button" class="boton_menu" [class.seleccionado]="botonSeleccionado === 0" (click)="seleccionarBoton(0)">{{"TRAVESIAS.TRAVESIAS_DISPONIBLES" | transloco}}</button>
+        <button type="button" class="boton_menu" [class.seleccionado]="botonSeleccionado === 1" (click)="seleccionarBoton(1)">{{"TRAVESIAS.PUBLICAR_TRAVESIA" | transloco}}</button>
+        <div class="linea_verde" [style.transform]="'translateX(' + (35 * botonSeleccionado) + 'vw)'"></div>
+    </div>
+
+    <ng-template [ngIf]= "botonSeleccionado === 0">
+        <div class="calendario">
+            Mostrar calendario
+        </div>
+    </ng-template>
+
+    <ng-template [ngIf]= "botonSeleccionado === 1">
+        <form class="formulario" (ngSubmit)="onSubmit()" [formGroup]="travesiasForm">
+            <input type="text" formControlName="origen" placeholder="Origen">
+            <input type="text" formControlName="destino" placeholder="Destino">
+            <label for="salida">Salida</label>
+            <input type="time" formControlName="salida">
+            <label for="llegada">Llegada</label>
+            <input type="time" formControlName="llegada">
+            <label for="date">Fecha</label>
+            <input type="date" formControlName="fecha">
+            <button [disabled]="travesiasForm.invalid">PUBLICAR</button>
+        </form>
+    </ng-template>
+
+</div>

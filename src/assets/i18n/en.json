@@ -65,5 +65,10 @@
         "VELERO1": "Sailboat1",
         "VELERO2": "Sailboat2",
         "VELERO3": "Sailboat3"
+    },
+    
+    "TRAVESIAS":{
+        "TRAVESIAS_DISPONIBLES": "Available crossings",
+        "PUBLICAR_TRAVESIA": "Publish journey"
     }
 }

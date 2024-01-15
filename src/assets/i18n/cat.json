@@ -65,5 +65,10 @@
         "VELERO1": "Vaixell1",
         "VELERO2": "Vaixell2",
         "VELERO3": "Vaixell3"
+    },
+
+    "TRAVESIAS":{
+        "TRAVESIAS_DISPONIBLES": "Travesses disponibles",
+        "PUBLICAR_TRAVESIA": "Publicar travessa"
     }
 }

@@ -65,5 +65,10 @@
         "VELERO1": "Velero1",
         "VELERO2": "Velero2",
         "VELERO3": "Velero3"
+    },
+    
+    "TRAVESIAS":{
+        "TRAVESIAS_DISPONIBLES": "Travesías disponibles",
+        "PUBLICAR_TRAVESIA": "Publicar travesía"
     }
 }
