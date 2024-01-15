@@ -140,8 +140,8 @@
     
     .calendario{
         width: 80vw;
-        height: 40vh;
-        padding: 6%;
+        height: 400px;
+        padding: 10%;
     }
 
     .info__mes{
