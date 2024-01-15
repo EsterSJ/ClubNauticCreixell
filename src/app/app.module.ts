@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SocialComponent } from './pages/social/social.component';
 import { VelerosComponent } from './pages/veleros/veleros.component';
 import { TravesiasComponent } from './pages/travesias/travesias.component';
+import { CalendarioComponent } from './components/calendario/calendario.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TravesiasComponent } from './pages/travesias/travesias.component';
     HeaderComponent,
     SocialComponent,
     VelerosComponent,
-    TravesiasComponent
+    TravesiasComponent,
+    CalendarioComponent
   ],
   imports: [
     BrowserModule,
