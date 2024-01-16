@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 
@@ -7,29 +7,40 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   templateUrl: './form-travesias.component.html',
   styleUrls: ['./form-travesias.component.css']
 })
-export class FormTravesiasComponent {
+export class FormTravesiasComponent implements OnInit{
 
   public travesiasForm: FormGroup;
+  public enviado: boolean = false;
 
   constructor (private formBuilder: FormBuilder){
-    this.buildForm();
-  }
-
-  private buildForm (): void{
-    
-    const minLength: number = 8;
-
     this.travesiasForm = this.formBuilder.group({
       origen: [,Validators.required],
-      salida: [,Validators.required],
+      hora_salida: [,Validators.required],
       destino: [,Validators.required],
-      llegada: [,Validators.required],
+      hora_llegada: [,Validators.required],
       fecha: [,Validators.required],
+      velero: [,Validators.required],
       plazas: [, Validators.required]
     });
   }
 
-  public publicar_travesia(): void{
-    alert("Travesia creada con éxito");
+  ngOnInit(): void {
+    
   }
+
+  onSubmit(){
+    this.enviado = true;
+
+    if (this.travesiasForm.invalid){
+      console.log("Formulario invalido");
+      return
+    }
+    alert ("Travesia creada con éxito");
+  }
+
+  onReset(){
+    this.enviado = false;
+    this.travesiasForm.reset();
+  }
+
 }
