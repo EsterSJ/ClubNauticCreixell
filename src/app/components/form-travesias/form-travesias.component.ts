@@ -32,7 +32,6 @@ export class FormTravesiasComponent implements OnInit{
     this.enviado = true;
 
     if (this.travesiasForm.invalid){
-      console.log("Formulario invalido");
       return
     }
     alert ("Travesia creada con éxito");

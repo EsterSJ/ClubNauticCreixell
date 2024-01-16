@@ -14,6 +14,8 @@ import { VelerosComponent } from './pages/veleros/veleros.component';
 import { TravesiasComponent } from './pages/travesias/travesias.component';
 import { CalendarioComponent } from './components/calendario/calendario.component';
 import { FormTravesiasComponent } from './components/form-travesias/form-travesias.component';
+import { FormSociosComponent } from './components/form-socios/form-socios.component';
+import { AltaSociosComponent } from './pages/alta-socios/alta-socios.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FormTravesiasComponent } from './components/form-travesias/form-travesi
     VelerosComponent,
     TravesiasComponent,
     CalendarioComponent,
-    FormTravesiasComponent
+    FormTravesiasComponent,
+    FormSociosComponent,
+    AltaSociosComponent
   ],
   imports: [
     BrowserModule,

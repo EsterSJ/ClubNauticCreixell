@@ -1,0 +1,24 @@
+    <form class="formulario" [formGroup]="sociosForm">
+        <div class="entrada">
+            <label for="nombre">Nombre*</label>
+            <input type="text" formControlName="nombre" [ngClass]="{is_invalid: (sociosForm.get('nombre').dirty || sociosForm.get('nombre').touched) && !sociosForm.get('nombre').valid}">
+        </div>
+    
+        <div class="entrada">
+            <label for="apellidos">Apellidos*</label>
+            <input type="text" formControlName="apellidos" [ngClass]="{is_invalid: (sociosForm.get('apellidos').dirty && sociosForm.get('apellidos').touched) && !sociosForm.get('apellidos').valid}">
+         </div>
+    
+        <div class="entrada">
+            <label for="email">Correo electrónico*</label>
+            <input type="email" formControlName="email" [ngClass]="{is_invalid: (sociosForm.get('email').dirty || sociosForm.get('email').touched) && !sociosForm.get('email').valid}">
+        </div>
+    
+        <div class="entrada">
+            <label for="contrasenya">Contraseña*</label>
+            <input type="password" formControlName="contrasenya" [ngClass]="{is_invalid: (sociosForm.get('contrasenya').dirty && sociosForm.get('contrasenya').touched) && !sociosForm.get('contrasenya').valid}">
+        </div>
+    
+        <button type="reset" (click)="onSubmit()" [disabled]="sociosForm.invalid">REGISTRAR</button>
+    
+    </form>
