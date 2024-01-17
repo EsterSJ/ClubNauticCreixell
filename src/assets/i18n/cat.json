@@ -70,5 +70,24 @@
     "TRAVESIAS":{
         "TRAVESIAS_DISPONIBLES": "Travesses disponibles",
         "PUBLICAR_TRAVESIA": "Publicar travessa"
-    }
+    },
+
+    "FORM_TRAVESIA":{
+        "ORIGEN": "Origen*",
+        "HORA_SALIDA": "Hora de sortida*",
+        "DESTINO": "Destí*",
+        "HORA_LLEGADA": "Hora d'arribada*",
+        "FECHA": "Data*",
+        "VELERO": "Vaixell*",
+        "PLAZAS": "Nº de places*",
+        "PUBLICAR": "PUBLICAR"
+    },
+
+    "FORM_SOCIOS":{
+        "NOMBRE": "Nom*",
+        "APELLIDOS": "Cognoms*",
+        "EMAIL": "Correu electrònic*",
+        "CONTRASENYA": "Contrasenya*",
+        "REGISTRAR": "REGISTRAR"
+    } 
 }

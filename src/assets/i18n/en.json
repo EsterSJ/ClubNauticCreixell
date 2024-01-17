@@ -70,5 +70,24 @@
     "TRAVESIAS":{
         "TRAVESIAS_DISPONIBLES": "Available crossings",
         "PUBLICAR_TRAVESIA": "Publish journey"
-    }
+    },
+
+    "FORM_TRAVESIA":{
+        "ORIGEN": "Origin*",
+        "HORA_SALIDA": "Departure time*",
+        "DESTINO": "Destinaton*",
+        "HORA_LLEGADA": "Arrival time*",
+        "FECHA": "Date*",
+        "VELERO": "Sailboat*",
+        "PLAZAS": "Nº of seats*",
+        "PUBLICAR": "PUBLISH"
+    },
+
+    "FORM_SOCIOS":{
+        "NOMBRE": "Name*",
+        "APELLIDOS": "Surname*",
+        "EMAIL": "Email*",
+        "CONTRASENYA": "Password*",
+        "REGISTRAR": "RESGISTER"
+    }  
 }
