@@ -70,5 +70,24 @@
     "TRAVESIAS":{
         "TRAVESIAS_DISPONIBLES": "Travesías disponibles",
         "PUBLICAR_TRAVESIA": "Publicar travesía"
-    }
+    },
+
+    "FORM_TRAVESIA":{
+        "ORIGEN": "Origen*",
+        "HORA_SALIDA": "Hora de salida*",
+        "DESTINO": "Destino*",
+        "HORA_LLEGADA": "Hora de llegada*",
+        "FECHA": "Fecha*",
+        "VELERO": "Velero*",
+        "PLAZAS": "Nº de plazas*",
+        "PUBLICAR": "PUBLICAR"
+    },
+
+    "FORM_SOCIOS":{
+        "NOMBRE": "Nombre*",
+        "APELLIDOS": "Apellidos*",
+        "EMAIL": "Correo electrónico*",
+        "CONTRASENYA": "Contraseña*",
+        "REGISTRAR": "REGISTRAR"
+    } 
 }

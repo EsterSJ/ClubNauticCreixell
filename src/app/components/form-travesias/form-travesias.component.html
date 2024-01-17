@@ -1,38 +1,38 @@
 <form class="formulario" [formGroup]="travesiasForm">
     <div class="entrada">
-        <label for="origen">Origen*</label>
+        <label for="origen">{{"FORM_TRAVESIA.ORIGEN" | transloco}}</label>
         <input type="text" formControlName="origen" [ngClass]="{is_invalid: (travesiasForm.get('origen').dirty || travesiasForm.get('origen').touched) && !travesiasForm.get('origen').valid}">
     </div>
 
     <div class="entrada">
-        <label for="hora_salida">Hora salida*</label>
-        <input type="time" formControlName="hora_salida" [ngClass]="{is_invalid: (travesiasForm.get('hora_salida') && travesiasForm.get('hora_salida').touched) && !travesiasForm.get('hora_salida').valid}">
+        <label for="hora_salida">{{"FORM_TRAVESIA.HORA_SALIDA" | transloco}}</label>
+        <input type="time" formControlName="hora_salida" [ngClass]="{is_invalid: (travesiasForm.get('hora_salida').dirty && travesiasForm.get('hora_salida').touched) && !travesiasForm.get('hora_salida').valid}">
      </div>
 
     <div class="entrada">
-        <label for="destino">Destino*</label>
+        <label for="destino">{{"FORM_TRAVESIA.DESTINO" | transloco}}</label>
         <input type="text" formControlName="destino" [ngClass]="{is_invalid: (travesiasForm.get('destino').dirty || travesiasForm.get('destino').touched) && !travesiasForm.get('destino').valid}">
     </div>
 
     <div class="entrada">
-        <label for="hora_llegada">Hora llegada*</label>
-        <input type="time" formControlName="hora_llegada" [ngClass]="{is_invalid: (travesiasForm.get('hora_llegada') && travesiasForm.get('hora_llegada').touched) && !travesiasForm.get('hora_llegada').valid}">
+        <label for="hora_llegada">{{"FORM_TRAVESIA.HORA_LLEGADA" | transloco}}</label>
+        <input type="time" formControlName="hora_llegada" [ngClass]="{is_invalid: (travesiasForm.get('hora_llegada').dirty && travesiasForm.get('hora_llegada').touched) && !travesiasForm.get('hora_llegada').valid}">
     </div>
 
     <div class="entrada">
-        <label for="fecha">Fecha*</label>
+        <label for="fecha">{{"FORM_TRAVESIA.FECHA" | transloco}}</label>
         <input type="date" formControlName="fecha" [ngClass]="{is_invalid: (travesiasForm.get('fecha').dirty || travesiasForm.get('fecha').touched) && !travesiasForm.get('fecha').valid}">
     </div>
 
     <div class="entrada">
-        <label for="velero">Velero*</label>
+        <label for="velero">{{"FORM_TRAVESIA.VELERO" | transloco}}</label>
         <input type="text" formControlName="velero" [ngClass]="{is_invalid: (travesiasForm.get('velero').dirty || travesiasForm.get('velero').touched) && !travesiasForm.get('velero').valid}">
     </div>
 
     <div class="entrada">
-        <label for="plazas">Nº Plazas*</label>
+        <label for="plazas">{{"FORM_TRAVESIA.PLAZAS" | transloco}}</label>
         <input type="text" formControlName="plazas" [ngClass]="{is_invalid: (travesiasForm.get('plazas').dirty || travesiasForm.get('plazas').touched) && !travesiasForm.get('plazas').valid}">
     </div>
-    <button type="reset" (click)="onSubmit()" [disabled]="travesiasForm.invalid">PUBLICAR</button>
+    <button type="reset" (click)="onSubmit()" [disabled]="travesiasForm.invalid">{{"FORM_TRAVESIA.PUBLICAR" | transloco}}</button>
 
 </form>
