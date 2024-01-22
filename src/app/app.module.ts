@@ -16,6 +16,8 @@ import { CalendarioComponent } from './components/calendario/calendario.componen
 import { FormTravesiasComponent } from './components/form-travesias/form-travesias.component';
 import { FormSociosComponent } from './components/form-socios/form-socios.component';
 import { AltaSociosComponent } from './pages/alta-socios/alta-socios.component';
+import { ListaSociosComponent } from './pages/lista-socios/lista-socios.component';
+import { TarjetaSocioComponent } from './component/tarjeta-socio/tarjeta-socio.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { AltaSociosComponent } from './pages/alta-socios/alta-socios.component';
     CalendarioComponent,
     FormTravesiasComponent,
     FormSociosComponent,
-    AltaSociosComponent
+    AltaSociosComponent,
+    ListaSociosComponent,
+    TarjetaSocioComponent
   ],
   imports: [
     BrowserModule,

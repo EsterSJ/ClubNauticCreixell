@@ -1,0 +1,35 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+.filtros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 10vh;
+    color: var(--colorGris);
+}
+
+input, button{
+    color: var(--colorGris);
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid var(--colorGris);
+    background-color: transparent;
+}
+
+input{
+    width: 380px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 38px;
+    padding: 24px;
+}

@@ -1,0 +1,11 @@
+.socio{
+    background-color: var(--colorAzul);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--colorBlanco);
+    width: 320px;
+    padding: 4%;
+}

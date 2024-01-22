@@ -1,4 +1,12 @@
     <form class="formulario" [formGroup]="sociosForm">
+
+        <div class="entrada">
+            <select class="rol" name="rol" id="rol">
+                <option value="socio">{{"ROL.SOCIO" | transloco}}</option>
+                <option value="patron">{{"ROL.PATRON" | transloco}}</option>
+            </select>
+        </div>
+
         <div class="entrada">
             <label for="nombre">{{"FORM_SOCIOS.NOMBRE" | transloco}}</label>
             <input type="text" formControlName="nombre" [ngClass]="{is_invalid: (sociosForm.get('nombre').dirty || sociosForm.get('nombre').touched) && !sociosForm.get('nombre').valid}">

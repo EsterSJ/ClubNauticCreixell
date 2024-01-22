@@ -89,5 +89,12 @@
         "EMAIL": "Correo electrónico*",
         "CONTRASENYA": "Contraseña*",
         "REGISTRAR": "REGISTRAR"
-    } 
+    },
+    
+    "ROL":{
+        "SOCIO": "Socio",
+        "PATRON": "Patrón"
+    },
+
+    "LISTA": "Listado de socios"
 }
