@@ -89,5 +89,12 @@
         "EMAIL": "Correu electrònic*",
         "CONTRASENYA": "Contrasenya*",
         "REGISTRAR": "REGISTRAR"
-    } 
+    },
+    
+    "ROL":{
+        "SOCIO": "Soci",
+        "PATRON": "Patronat"
+    },
+
+    "LISTA": "Listat de socis"
 }

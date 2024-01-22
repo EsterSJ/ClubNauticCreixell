@@ -6,6 +6,7 @@ import { SocialComponent } from './pages/social/social.component';
 import { VelerosComponent } from './pages/veleros/veleros.component';
 import { TravesiasComponent } from './pages/travesias/travesias.component';
 import { AltaSociosComponent } from './pages/alta-socios/alta-socios.component';
+import { ListaSociosComponent } from './pages/lista-socios/lista-socios.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'social', component: SocialComponent},
   {path: 'veleros', component: VelerosComponent},
   {path: 'travesias', component: TravesiasComponent},
-  {path: 'altaSocios', component: AltaSociosComponent}
+  {path: 'altaSocios', component: AltaSociosComponent},
+  {path: 'listaSocios', component: ListaSociosComponent}
 ];
 
 @NgModule({

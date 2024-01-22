@@ -1,0 +1,29 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorAzul);
+    font-size: 18px;
+}
+
+a, i{
+    color: var(--colorAzul);
+    font-size: 18px;
+}
+
+i{
+    font-size: 32px;
+}
+
+a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    height: 32px;
+    margin-top: -60px;
+}

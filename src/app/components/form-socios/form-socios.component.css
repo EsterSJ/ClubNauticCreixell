@@ -28,6 +28,13 @@ label{
     color: var(--colorGris);
 }
 
+.rol{
+    width: 360px;
+    font-size: 18px;
+    height: 24px;
+    color: var(--colorGris);
+}
+
 button{
     color: white;
     background-color: var(--colorAzul);

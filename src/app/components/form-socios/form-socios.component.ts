@@ -14,10 +14,11 @@ export class FormSociosComponent {
 
   constructor (private formBuilder: FormBuilder){
     this.sociosForm = this.formBuilder.group({
+      rol: [],
       nombre: [,Validators.required],
       apellidos: [,Validators.required],
       email: [,[Validators.required, Validators.email]],
-      contrasenya: [,[Validators.required, Validators.minLength(this.minLength)]],
+      contrasenya: [,[Validators.required, Validators.minLength(this.minLength)]]
     });
   }
 
