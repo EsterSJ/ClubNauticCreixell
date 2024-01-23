@@ -1,3 +1,14 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+}
+
 .socio{
     background-color: var(--colorAzul);
     display: flex;
@@ -8,4 +19,13 @@
     color: var(--colorBlanco);
     width: 320px;
     padding: 4%;
+    border-radius: 24px;
+}
+
+    .socio:hover{
+        background-color: var(--colorVerde);
+    }
+
+i{
+    cursor: pointer;
 }
