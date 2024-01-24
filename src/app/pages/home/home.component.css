@@ -7,6 +7,7 @@
     gap: 32px;
     background-color: var(--colorBlanco);
     width: 100vw;
+    height: 94vh;
 }
 
 header{
@@ -32,13 +33,13 @@ span{
     display: flex;
     flex-direction: row;
     gap: 24px;
-    margin-right: 18px;
+    width: 30vw;
 }
 
 img{
     width: 420px;
     height: auto;
-    margin-top: -142px;
+    margin-top: -150px;
 }
 
 form{
@@ -89,6 +90,16 @@ button{
         background-color: var(--colorVerde);
     }
 
+    button:disabled {
+        background-color: #cccccc; 
+        color: #666666; 
+        cursor: not-allowed; 
+    }
+
+.is_invalid{
+    color:red;
+}
+
 .aqui{
     color: var(--colorVerde);
     background-color: transparent;
@@ -111,8 +122,8 @@ p{
     }
 
     img {
-        width: 260px;
-        margin-top: -97px;
+        width: 238px;
+        margin-top: -98px;
     }
 
     h1 {

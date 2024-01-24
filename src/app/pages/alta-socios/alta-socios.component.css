@@ -1,12 +1,14 @@
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 
-html{
+.contenedor{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--colorAzul);
     font-size: 18px;
+    height: 79vh;
+    padding-bottom: 6%;
 }
 
 a, i{

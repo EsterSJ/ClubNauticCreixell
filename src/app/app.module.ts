@@ -17,7 +17,8 @@ import { FormTravesiasComponent } from './components/form-travesias/form-travesi
 import { FormSociosComponent } from './components/form-socios/form-socios.component';
 import { AltaSociosComponent } from './pages/alta-socios/alta-socios.component';
 import { ListaSociosComponent } from './pages/lista-socios/lista-socios.component';
-import { TarjetaSocioComponent } from './component/tarjeta-socio/tarjeta-socio.component';
+import { TarjetaSocioComponent } from './components/tarjeta-socio/tarjeta-socio.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TarjetaSocioComponent } from './component/tarjeta-socio/tarjeta-socio.c
     FormSociosComponent,
     AltaSociosComponent,
     ListaSociosComponent,
-    TarjetaSocioComponent
+    TarjetaSocioComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+.footer{
+    width: 100vw;
+    height: 6vh;
+    background-color: var(--colorAzul);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 24px;
+    color: var(--colorBlanco);
+    position: fixed;
+}

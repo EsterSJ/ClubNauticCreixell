@@ -7,7 +7,6 @@
         </span>
 
         <div class="idioma">
-            <button (click)="selectLanguage('es')">Español</button>
             <button (click)="selectLanguage('en')">English</button>
             <button (click)="selectLanguage('cat')">Català</button>
         </div>
@@ -16,15 +15,14 @@
 
     <img src="assets/img/logo.png" alt="">
 
-    <form action="reset">
-        
-        <i class="bi bi-person-fill"><input type="text" placeholder="{{ 'LOGIN.USER' | transloco }}"></i>
+    <form [formGroup]="loginForm">
+        <i class="bi bi-person-fill"><input type="email" placeholder="{{ 'LOGIN.USER' | transloco }}" formControlName="email" [ngClass]="{is_invalid: (loginForm.get('email').dirty || loginForm.get('email').touched) && !loginForm.get('email').valid}"></i>
         <div class="line"></div>
-        <i class="bi bi-lock-fill"><input type="password" placeholder="{{ 'LOGIN.PASSWORD' | transloco }}"></i>
+
+        <i class="bi bi-lock-fill"><input type="password" placeholder="{{ 'LOGIN.PASSWORD' | transloco }}" formControlName="contrasenya" [ngClass]="{is_invalid: (loginForm.get('contrasenya').dirty && loginForm.get('contrasenya').touched) && !loginForm.get('contrasenya').valid}"></i>
         <div class="line"></div>
-        <button (click)="reservas()">{{ 'LOGIN.LOGIN' | transloco }}</button>
-        <p>{{"LOGIN.REMEMBER" | transloco}} <button class="aqui">{{"LOGIN.AQUI" | transloco}}</button></p>
+
+        <button type="reset" (click)="onSubmit()" [disabled]="loginForm.invalid">{{ 'LOGIN.LOGIN' | transloco }}</button>
 
     </form>
-
 </div>
