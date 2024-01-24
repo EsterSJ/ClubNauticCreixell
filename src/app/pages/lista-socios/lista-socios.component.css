@@ -1,13 +1,21 @@
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 79vh;
+    box-sizing: border-box;
+}
+
 .filtros{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    height: 10vh;
     color: var(--colorGris);
+    height: 8vh;
 }
 
 input, button{
@@ -30,8 +38,11 @@ button{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 38px;
-    padding: 24px;
+    gap: 40px;
+    width: 85vw;
+    padding: 42px;    
+    overflow-y: auto;
+
 }
 
 @media screen and (max-width: 768px) {

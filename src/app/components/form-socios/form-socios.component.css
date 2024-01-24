@@ -58,12 +58,12 @@ button:disabled {
     cursor: not-allowed; 
 }
 
-.is-invalid{
+.is_invalid{
     color:red;
 }
 
-@media screen and (max-width: 768px) {
-    input{
+@media screen and (max-width: 770px) {
+    .rol, input{
         font-size: 16px;
         width: 240px;
     }
@@ -73,8 +73,8 @@ button:disabled {
     }
 
     .formulario{
-        padding-top: 0;
-        margin-top: auto;
+        margin-top: 0;
+        margin: 0;
     }
 
 }
