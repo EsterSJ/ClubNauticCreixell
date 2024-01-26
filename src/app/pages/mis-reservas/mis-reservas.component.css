@@ -1,0 +1,57 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 85vh;
+}
+
+.filtro{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    font-size: 28px;
+    color: var(--colorGris);
+    margin-bottom: 38px;
+}
+
+input{
+    width: 23px;
+    height: 23px;
+}
+
+.lista_reservas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px;
+    overflow-y: auto;
+    padding: 4%;
+    width: 70vw;
+}
+
+@media (max-width: 768px) {
+    .filtro{
+        font-size: 14px;
+        gap: 18px;
+        padding: 1%;
+    }
+
+    input{
+        width: 14px;
+        height: 14px;
+    }
+
+    .lista_reservas{
+        width: 100vw;
+        gap: 16px;
+    }
+}

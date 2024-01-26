@@ -19,6 +19,8 @@ import { AltaSociosComponent } from './pages/alta-socios/alta-socios.component';
 import { ListaSociosComponent } from './pages/lista-socios/lista-socios.component';
 import { TarjetaSocioComponent } from './components/tarjeta-socio/tarjeta-socio.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MisReservasComponent } from './pages/mis-reservas/mis-reservas.component';
+import { TarjetaReservaComponent } from './components/tarjeta-reserva/tarjeta-reserva.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { FooterComponent } from './components/footer/footer.component';
     AltaSociosComponent,
     ListaSociosComponent,
     TarjetaSocioComponent,
-    FooterComponent
+    FooterComponent,
+    MisReservasComponent,
+    TarjetaReservaComponent
   ],
   imports: [
     BrowserModule,

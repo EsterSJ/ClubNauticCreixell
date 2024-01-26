@@ -24,4 +24,8 @@ export class ReservasComponent {
     this.router.navigateByUrl('/travesias');
   }
 
+  public misReservas(): void{
+    this.router.navigateByUrl('/misReservas');
+  }
+
 }
