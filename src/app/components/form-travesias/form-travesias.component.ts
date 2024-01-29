@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -12,7 +14,7 @@ export class FormTravesiasComponent implements OnInit{
   public travesiasForm: FormGroup;
   public enviado: boolean = false;
 
-  constructor (private formBuilder: FormBuilder){
+  constructor (private formBuilder: FormBuilder, private router: Router){
     this.travesiasForm = this.formBuilder.group({
       origen: [,Validators.required],
       hora_salida: [,Validators.required],
@@ -34,7 +36,12 @@ export class FormTravesiasComponent implements OnInit{
     if (this.travesiasForm.invalid){
       return
     }
-    alert ("Travesia creada con éxito");
+    Swal.fire({
+      text: "Gracias por publicar tu travesía",
+      icon: 'success',
+      confirmButtonText: 'Aceptar'
+    });
+    this.router.navigateByUrl('/reservas');
   }
 
   onReset(){

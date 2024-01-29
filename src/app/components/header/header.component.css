@@ -26,6 +26,7 @@ img{
 
 a{
     color: var(--colorAzul);
+    cursor: pointer;
 }
 
 a:hover{

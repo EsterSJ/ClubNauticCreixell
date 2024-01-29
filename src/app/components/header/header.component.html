@@ -3,7 +3,7 @@
     <div class="navegacion">
         <a routerLink=''>{{"HEADER.INICIO" | transloco}}</a>
         <a routerLink='/reservas'>{{"HEADER.RESERVAS" | transloco}}</a>
-        <a routerLink=''>{{"HEADER.SALIR" | transloco}}</a>
+        <a (click)="salir()">{{"HEADER.SALIR" | transloco}}</a>
         <a routerLink='/altaSocios'><i class="bi bi-person-fill-add"></i></a>
         <i class="bi bi-bar-chart-line-fill"></i>
     </div>

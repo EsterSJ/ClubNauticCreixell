@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-form-socios',
@@ -28,7 +29,11 @@ export class FormSociosComponent {
     if (this.sociosForm.invalid){
       return
     }
-    alert ("Alta de nuevo socio creada con éxito");
+    Swal.fire({
+      text: "Nuevo socio creado",
+      icon: 'success',
+      confirmButtonText: 'Aceptar'
+    });
   }
 
   onReset(){
