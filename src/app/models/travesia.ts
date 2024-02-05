@@ -8,8 +8,9 @@ export class Travesia {
     public destino: string;
     public llegada: number;
     public plazas: number;
+    public socios: number[];
 
-    constructor(id_travesia: number, id_user: number, fecha: Date, origen: string, salida: number, destino: string, llegada: number, plazas: number){
+    constructor(id_travesia: number, id_user: number, fecha: Date, origen: string, salida: number, destino: string, llegada: number, plazas: number, socios: number[]){
         this.id_travesia = id_travesia;
         this.id_user = id_user;
         this.fecha = fecha;
@@ -18,6 +19,7 @@ export class Travesia {
         this.destino = destino;
         this.llegada = llegada;
         this.plazas = plazas;
+        this.socios = [this.id_user];
     }
 
 }
