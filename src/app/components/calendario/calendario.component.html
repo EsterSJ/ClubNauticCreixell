@@ -16,14 +16,19 @@
       <ng-container *ngFor="let semana of diasDelMes">
         <div class="semana">
           <ng-container *ngFor="let dia of semana">
-            <button
-              class="day item"
-              style="padding: 4px; border-radius: 4px; border: 1px solid var(--colorGris); cursor: pointer;"
-              [ngClass]="{'clicked': diasSeleccionados.has(dia)}"
-              (click)="cambiarColor(dia)"
-            >
-            <span>{{ dia || '' }}</span>
-            </button>
+            <ng-container *ngIf="dia == null">
+              <div class=" day item vacio"></div>
+            </ng-container>
+            <ng-container *ngIf="dia != null">
+                <button
+                  class="day item"
+                  style="padding: 4px; border-radius: 4px; border: 1px solid var(--colorGris); cursor: pointer;"
+                  [ngClass]="{'clicked': diasSeleccionados.has(dia)}"
+                  (click)="cambiarColor(dia)"
+                >
+                <span>{{ dia || '' }}</span>
+                </button>
+            </ng-container>
           </ng-container>
         </div>
       </ng-container>

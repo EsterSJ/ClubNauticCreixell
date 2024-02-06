@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { TranslateService } from 'src/app/shared/translate.service';
-import Swal from 'sweetalert2';
-
 
 @Component({
   selector: 'app-home',
@@ -32,11 +30,6 @@ export class HomeComponent {
     if (this.loginForm.invalid){
       return
     }
-    Swal.fire({
-      text: "Bienvenido al Club!",
-      icon: 'success',
-      confirmButtonText: 'Aceptar'
-    });
     this.router.navigateByUrl('/reservas');
   }
 

@@ -50,3 +50,16 @@
 .boton_menu:hover{
   background-color: transparent;
 }
+
+button{
+  color: white;
+  background-color: var(--colorAzul);
+  border-radius: 50%;
+  border: none;
+  width: 180px;
+  height: 40px;
+  cursor: pointer;
+}
+  button:hover{
+      background-color: var(--colorVerde);
+  }

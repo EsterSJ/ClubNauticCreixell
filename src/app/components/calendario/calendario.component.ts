@@ -56,6 +56,7 @@ export class CalendarioComponent implements OnInit{
   }
 
   public cambiarColor(dia: number): void {
+
     // Usar el conjunto de días seleccionados correspondiente al mes actual
     this.diasSeleccionados = this.getDiasSeleccionados(this.fechaActual.getMonth());
 
@@ -67,6 +68,7 @@ export class CalendarioComponent implements OnInit{
 
     // Actualizar el conjunto de días seleccionados para el mes actual
     this.diasSeleccionadosPorMes.set(this.fechaActual.getMonth(), this.diasSeleccionados);
+
   }
 
   private getDiasSeleccionados(mes: number): Set<number> {
